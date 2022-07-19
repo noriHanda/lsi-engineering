@@ -1,0 +1,32 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7f9963f05190 .scope module, "multiplexer" "multiplexer" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "s";
+    .port_info 3 /OUTPUT 1 "y";
+o0x7f99650320c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x7f9965063008 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+L_0x7f996520e780 .functor XNOR 1, o0x7f99650320c8, L_0x7f9965063008, C4<0>, C4<0>;
+v0x7f9963f05300_0 .net/2u *"_ivl_0", 0 0, L_0x7f9965063008;  1 drivers
+v0x7f996520e3a0_0 .net *"_ivl_2", 0 0, L_0x7f996520e780;  1 drivers
+o0x7f9965032068 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7f996520e450_0 .net "a", 0 0, o0x7f9965032068;  0 drivers
+o0x7f9965032098 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7f996520e500_0 .net "b", 0 0, o0x7f9965032098;  0 drivers
+v0x7f996520e5a0_0 .net "s", 0 0, o0x7f99650320c8;  0 drivers
+v0x7f996520e680_0 .net "y", 0 0, L_0x7f996520e890;  1 drivers
+L_0x7f996520e890 .functor MUXZ 1, o0x7f9965032098, o0x7f9965032068, L_0x7f996520e780, C4<>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "hello.v";

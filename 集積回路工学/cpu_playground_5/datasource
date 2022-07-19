@@ -1,0 +1,154 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fddfac08000 .scope module, "testbench" "testbench" 2 3;
+ .timescale 0 0;
+v0x7fddfc00e380_0 .net "A", 7 0, L_0x7fddfaf05a80;  1 drivers
+v0x7fddfc00e450_0 .net "B", 7 0, L_0x7fddfaf05d90;  1 drivers
+v0x7fddfc00e4e0_0 .net "C", 7 0, L_0x7fddfaf06070;  1 drivers
+v0x7fddfc00e570_0 .var "ck", 0 0;
+S_0x7fddfac08170 .scope module, "inst0" "DataSource" 2 17, 3 1 0, S_0x7fddfac08000;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "ck";
+    .port_info 1 /OUTPUT 8 "A";
+    .port_info 2 /OUTPUT 8 "B";
+    .port_info 3 /OUTPUT 8 "C";
+L_0x7fddfaf05a80 .functor BUFZ 8, L_0x7fddfc00e600, C4<00000000>, C4<00000000>, C4<00000000>;
+L_0x7fddfaf05d90 .functor BUFZ 8, L_0x7fddfaf05b70, C4<00000000>, C4<00000000>, C4<00000000>;
+L_0x7fddfaf06070 .functor BUFZ 8, L_0x7fddfaf05e80, C4<00000000>, C4<00000000>, C4<00000000>;
+v0x7fddfac08340_0 .net "A", 7 0, L_0x7fddfaf05a80;  alias, 1 drivers
+v0x7fddfc00d710_0 .net "B", 7 0, L_0x7fddfaf05d90;  alias, 1 drivers
+v0x7fddfc00d7d0_0 .net "C", 7 0, L_0x7fddfaf06070;  alias, 1 drivers
+v0x7fddfc00d880_0 .net *"_ivl_0", 7 0, L_0x7fddfc00e600;  1 drivers
+v0x7fddfc00d910_0 .net *"_ivl_10", 3 0, L_0x7fddfaf05c10;  1 drivers
+L_0x7fddfae63050 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fddfc00da00_0 .net *"_ivl_13", 0 0, L_0x7fddfae63050;  1 drivers
+v0x7fddfc00dab0_0 .net *"_ivl_16", 7 0, L_0x7fddfaf05e80;  1 drivers
+v0x7fddfc00db60_0 .net *"_ivl_18", 3 0, L_0x7fddfaf05f50;  1 drivers
+v0x7fddfc00dc10_0 .net *"_ivl_2", 3 0, L_0x7fddfc00e6e0;  1 drivers
+L_0x7fddfae63098 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fddfc00dd20_0 .net *"_ivl_21", 0 0, L_0x7fddfae63098;  1 drivers
+L_0x7fddfae63008 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fddfc00ddd0_0 .net *"_ivl_5", 0 0, L_0x7fddfae63008;  1 drivers
+v0x7fddfc00de80_0 .net *"_ivl_8", 7 0, L_0x7fddfaf05b70;  1 drivers
+v0x7fddfc00df30 .array "a", 4 0, 7 0;
+v0x7fddfc00dfd0 .array "b", 4 0, 7 0;
+v0x7fddfc00e070 .array "c", 4 0, 7 0;
+v0x7fddfc00e110_0 .net "ck", 0 0, v0x7fddfc00e570_0;  1 drivers
+v0x7fddfc00e1b0_0 .var "q", 2 0;
+E_0x7fddfac06700 .event posedge, v0x7fddfc00e110_0;
+L_0x7fddfc00e600 .array/port v0x7fddfc00df30, L_0x7fddfc00e6e0;
+L_0x7fddfc00e6e0 .concat [ 3 1 0 0], v0x7fddfc00e1b0_0, L_0x7fddfae63008;
+L_0x7fddfaf05b70 .array/port v0x7fddfc00dfd0, L_0x7fddfaf05c10;
+L_0x7fddfaf05c10 .concat [ 3 1 0 0], v0x7fddfc00e1b0_0, L_0x7fddfae63050;
+L_0x7fddfaf05e80 .array/port v0x7fddfc00e070, L_0x7fddfaf05f50;
+L_0x7fddfaf05f50 .concat [ 3 1 0 0], v0x7fddfc00e1b0_0, L_0x7fddfae63098;
+    .scope S_0x7fddfac08170;
+T_0 ;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v0x7fddfc00e1b0_0, 0;
+    %pushi/vec4 1, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00df30, 4, 0;
+    %pushi/vec4 2, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00df30, 4, 0;
+    %pushi/vec4 3, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00df30, 4, 0;
+    %pushi/vec4 4, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00df30, 4, 0;
+    %pushi/vec4 5, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00df30, 4, 0;
+    %pushi/vec4 5, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00dfd0, 4, 0;
+    %pushi/vec4 4, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00dfd0, 4, 0;
+    %pushi/vec4 3, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00dfd0, 4, 0;
+    %pushi/vec4 2, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00dfd0, 4, 0;
+    %pushi/vec4 1, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00dfd0, 4, 0;
+    %pushi/vec4 5, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00e070, 4, 0;
+    %pushi/vec4 6, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00e070, 4, 0;
+    %pushi/vec4 7, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00e070, 4, 0;
+    %pushi/vec4 8, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00e070, 4, 0;
+    %pushi/vec4 9, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x7fddfc00e070, 4, 0;
+    %end;
+    .thread T_0;
+    .scope S_0x7fddfac08170;
+T_1 ;
+    %wait E_0x7fddfac06700;
+    %load/vec4 v0x7fddfc00e1b0_0;
+    %pad/u 32;
+    %cmpi/u 5, 0, 32;
+    %jmp/0xz  T_1.0, 5;
+    %load/vec4 v0x7fddfc00e1b0_0;
+    %addi 1, 0, 3;
+    %assign/vec4 v0x7fddfc00e1b0_0, 0;
+T_1.0 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x7fddfac08000;
+T_2 ;
+    %vpi_call 2 8 "$dumpfile", "DataSource.vcd" {0 0 0};
+    %vpi_call 2 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fddfac08000 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x7fddfc00e570_0, 0;
+    %delay 20, 0;
+    %vpi_call 2 11 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0x7fddfac08000;
+T_3 ;
+    %delay 1, 0;
+    %load/vec4 v0x7fddfc00e570_0;
+    %inv;
+    %assign/vec4 v0x7fddfc00e570_0, 0;
+    %jmp T_3;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench_ds.v";
+    "./DataSource.v";

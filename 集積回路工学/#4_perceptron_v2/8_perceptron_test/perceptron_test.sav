@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Thu Jul 29 08:45:49 2021
+[*]
+[dumpfile] "/Users/nishida/Documents/_working/電気電子工学演習III_4/#4_perceptron/8_perceptron_test/perceptron.vcd"
+[dumpfile_mtime] "Thu Jul 29 08:44:59 2021"
+[dumpfile_size] 27534
+[savefile] "/Users/nishida/Documents/_working/電気電子工学演習III_4/#4_perceptron/8_perceptron_test/perceptron_test.sav"
+[timestart] 0
+[size] 1855 694
+[pos] -1 -1
+*-3.981519 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 193
+[signals_width] 167
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@28
+testbench.CLK
+@24
+testbench.STATE[1:0]
+@28
+testbench.X1
+testbench.X2
+testbench.s
+@420
+testbench.Z
+@29
+testbench.DELTA[1:0]
+@22
+testbench.W1[3:0]
+testbench.W2[3:0]
+testbench.W3[3:0]
+testbench.perceptron.DEBUG_OUT0[11:0]
+testbench.perceptron.DEBUG_OUT1[11:0]
+testbench.perceptron.DEBUG_OUT2[11:0]
+testbench.perceptron.DEBUG_OUT3[11:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,65 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fcadba05be0 .scope module, "testbench" "testbench" 2 17;
+ .timescale 0 0;
+v0x7fcadaf14c20_0 .net "s1", 0 0, L_0x7fcadaf14d80;  1 drivers
+v0x7fcadaf14cd0_0 .net "s2", 0 0, L_0x7fcadaf14e30;  1 drivers
+S_0x7fcadba05d50 .scope module, "inst0" "s1" 2 24, 2 1 0, S_0x7fcadba05be0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "out";
+L_0x7fcadaf14d80 .functor BUFZ 1, v0x7fcadaf147e0_0, C4<0>, C4<0>, C4<0>;
+v0x7fcadbb04080_0 .net "out", 0 0, L_0x7fcadaf14d80;  alias, 1 drivers
+v0x7fcadaf147e0_0 .var "q", 0 0;
+S_0x7fcadaf148b0 .scope module, "inst1" "s2" 2 25, 2 9 0, S_0x7fcadba05be0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "out";
+L_0x7fcadaf14e30 .functor BUFZ 1, v0x7fcadaf14b60_0, C4<0>, C4<0>, C4<0>;
+v0x7fcadaf14ab0_0 .net "out", 0 0, L_0x7fcadaf14e30;  alias, 1 drivers
+v0x7fcadaf14b60_0 .var "q", 0 0;
+    .scope S_0x7fcadba05d50;
+T_0 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x7fcadaf147e0_0, 0;
+    %end;
+    .thread T_0;
+    .scope S_0x7fcadba05d50;
+T_1 ;
+    %delay 1, 0;
+    %load/vec4 v0x7fcadaf147e0_0;
+    %inv;
+    %assign/vec4 v0x7fcadaf147e0_0, 0;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x7fcadaf148b0;
+T_2 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x7fcadaf14b60_0, 0;
+    %end;
+    .thread T_2;
+    .scope S_0x7fcadaf148b0;
+T_3 ;
+    %delay 2, 0;
+    %load/vec4 v0x7fcadaf14b60_0;
+    %inv;
+    %assign/vec4 v0x7fcadaf14b60_0, 0;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0x7fcadba05be0;
+T_4 ;
+    %vpi_call 2 20 "$monitor", "%t s1:%b s2:%b", $time, v0x7fcadaf14c20_0, v0x7fcadaf14cd0_0 {0 0 0};
+    %delay 15, 0;
+    %vpi_call 2 21 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "5-1.v";

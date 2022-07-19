@@ -1,0 +1,30 @@
+[timestart] 0
+[treeopen] testbench.
+@28
+testbench.ToyCPU_6bit.CK
+@24
+testbench.ToyCPU_6bit.in[5:0]
+@24
+testbench.ToyCPU_6bit.address[5:0]
+@28
+testbench.ToyCPU_6bit.OP[3:0]
+@24
+testbench.ToyCPU_6bit.IM[5:0]
+@28
+testbench.ToyCPU_6bit.IF_OPreg[3:0]
+@24
+testbench.ToyCPU_6bit.IF_IMreg[5:0]
+@24
+testbench.ToyCPU_6bit.ID_Sreg[1:0]
+@24
+testbench.ToyCPU_6bit.ID_IMreg[5:0]
+@24
+testbench.ToyCPU_6bit.Y[5:0]
+@24
+testbench.ToyCPU_6bit.EX_BUSreg[5:0]
+@24
+testbench.ToyCPU_6bit.Aout[5:0]
+@24
+testbench.ToyCPU_6bit.Bout[5:0]
+@24
+testbench.ToyCPU_6bit.Oout[5:0]

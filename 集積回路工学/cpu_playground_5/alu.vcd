@@ -1,0 +1,154 @@
+$date
+	Sun Jun  6 22:53:18 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! MUL [7:0] $end
+$var wire 8 " C [7:0] $end
+$var wire 8 # B [7:0] $end
+$var wire 8 $ ADD [7:0] $end
+$var wire 8 % A [7:0] $end
+$var reg 1 & ck $end
+$scope module inst0 $end
+$var wire 8 ' A [7:0] $end
+$var wire 8 ( B [7:0] $end
+$var wire 8 ) C [7:0] $end
+$var wire 1 & ck $end
+$var reg 3 * q [2:0] $end
+$upscope $end
+$scope module inst1 $end
+$var wire 8 + A [7:0] $end
+$var wire 8 , B [7:0] $end
+$var wire 8 - Y [7:0] $end
+$upscope $end
+$scope module inst2 $end
+$var wire 8 . A [7:0] $end
+$var wire 8 / B [7:0] $end
+$var wire 8 0 Y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 0
+b101 /
+b101 .
+b101 -
+b101 ,
+b1 +
+b0 *
+b101 )
+b101 (
+b1 '
+0&
+b1 %
+b1010 $
+b101 #
+b101 "
+b101 !
+$end
+#1
+b10 %
+b10 '
+b10 +
+b1000 !
+b1000 -
+b1000 .
+b100 #
+b100 (
+b100 ,
+b1110 $
+b1110 0
+b110 "
+b110 )
+b110 /
+b1 *
+1&
+#2
+0&
+#3
+b11 %
+b11 '
+b11 +
+b1001 !
+b1001 -
+b1001 .
+b11 #
+b11 (
+b11 ,
+b10000 $
+b10000 0
+b111 "
+b111 )
+b111 /
+b10 *
+1&
+#4
+0&
+#5
+b100 %
+b100 '
+b100 +
+b1000 !
+b1000 -
+b1000 .
+b10 #
+b10 (
+b10 ,
+b10000 $
+b10000 0
+b1000 "
+b1000 )
+b1000 /
+b11 *
+1&
+#6
+0&
+#7
+b101 %
+b101 '
+b101 +
+b101 !
+b101 -
+b101 .
+b1 #
+b1 (
+b1 ,
+b1110 $
+b1110 0
+b1001 "
+b1001 )
+b1001 /
+b100 *
+1&
+#8
+0&
+#9
+1&
+#10
+0&
+#11
+1&
+#12
+0&
+#13
+1&
+#14
+0&
+#15
+1&
+#16
+0&
+#17
+1&
+#18
+0&
+#19
+1&
+#20
+0&

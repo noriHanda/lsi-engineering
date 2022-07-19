@@ -1,0 +1,80 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fe4170041c0 .scope module, "testbench" "testbench" 2 12;
+ .timescale 0 0;
+v0x7fe417014c20_0 .var "a", 0 0;
+v0x7fe417014cb0_0 .var "b", 0 0;
+v0x7fe417014d40_0 .var "c", 0 0;
+v0x7fe417014e10_0 .net "f", 0 0, L_0x7fe417015330;  1 drivers
+S_0x7fe417004340 .scope module, "inst0" "my_design_practice" 2 35, 2 1 0, S_0x7fe4170041c0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "C";
+    .port_info 3 /OUTPUT 1 "F";
+L_0x7fe417014ec0 .functor NOT 1, v0x7fe417014d40_0, C4<0>, C4<0>, C4<0>;
+L_0x7fe417014f90 .functor AND 1, v0x7fe417014c20_0, v0x7fe417014d40_0, C4<1>, C4<1>;
+L_0x7fe417015060 .functor AND 1, L_0x7fe417014ec0, v0x7fe417014cb0_0, C4<1>, C4<1>;
+L_0x7fe417015170 .functor AND 1, v0x7fe417014cb0_0, v0x7fe417014c20_0, C4<1>, C4<1>;
+L_0x7fe417015200 .functor OR 1, L_0x7fe417014f90, L_0x7fe417015060, C4<0>, C4<0>;
+L_0x7fe417015330 .functor OR 1, L_0x7fe417015200, L_0x7fe417015170, C4<0>, C4<0>;
+v0x7fe417004560_0 .net "A", 0 0, v0x7fe417014c20_0;  1 drivers
+v0x7fe417014600_0 .net "B", 0 0, v0x7fe417014cb0_0;  1 drivers
+v0x7fe4170146a0_0 .net "C", 0 0, v0x7fe417014d40_0;  1 drivers
+v0x7fe417014750_0 .net "F", 0 0, L_0x7fe417015330;  alias, 1 drivers
+v0x7fe4170147f0_0 .net *"_ivl_8", 0 0, L_0x7fe417015200;  1 drivers
+v0x7fe4170148e0_0 .net "w1", 0 0, L_0x7fe417014ec0;  1 drivers
+v0x7fe417014980_0 .net "w2", 0 0, L_0x7fe417014f90;  1 drivers
+v0x7fe417014a20_0 .net "w3", 0 0, L_0x7fe417015060;  1 drivers
+v0x7fe417014ac0_0 .net "w4", 0 0, L_0x7fe417015170;  1 drivers
+    .scope S_0x7fe4170041c0;
+T_0 ;
+    %vpi_call 2 18 "$dumpfile", "my_design_practice.vcd" {0 0 0};
+    %vpi_call 2 19 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fe4170041c0 {0 0 0};
+    %vpi_call 2 21 "$monitor", "%t: a:%b b:%b c:%b f:%b", $time, v0x7fe417014c20_0, v0x7fe417014cb0_0, v0x7fe417014d40_0, v0x7fe417014e10_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x7fe417014c20_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x7fe417014cb0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x7fe417014d40_0, 0;
+    %delay 8, 0;
+    %vpi_call 2 26 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fe4170041c0;
+T_1 ;
+    %delay 1, 0;
+    %load/vec4 v0x7fe417014c20_0;
+    %inv;
+    %assign/vec4 v0x7fe417014c20_0, 0;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x7fe4170041c0;
+T_2 ;
+    %delay 2, 0;
+    %load/vec4 v0x7fe417014cb0_0;
+    %inv;
+    %assign/vec4 v0x7fe417014cb0_0, 0;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x7fe4170041c0;
+T_3 ;
+    %delay 4, 0;
+    %load/vec4 v0x7fe417014d40_0;
+    %inv;
+    %assign/vec4 v0x7fe417014d40_0, 0;
+    %jmp T_3;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "my_design_practice.v";

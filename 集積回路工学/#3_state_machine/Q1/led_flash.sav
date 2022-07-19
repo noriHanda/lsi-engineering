@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Jul 22 04:23:33 2020
+[*]
+[dumpfile] "/Volumes/GoogleDrive/マイドライブ/10_class/電気電子工学演習III/_working/電気電子工学演習III（ディジタル回路）#3_Ans/Q1/led_flash.vcd"
+[dumpfile_mtime] "Wed Jul 22 04:21:44 2020"
+[dumpfile_size] 1788
+[savefile] "/Volumes/GoogleDrive/マイドライブ/10_class/電気電子工学演習III/_working/電気電子工学演習III（ディジタル回路）#3_Ans/Q1/led_flash.sav"
+[timestart] 0
+[size] 1554 600
+[pos] -352 -485
+*-4.389262 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 193
+[signals_width] 116
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+testbench.CLK
+testbench.RST_N
+testbench.KEY
+@29
+testbench.SEL
+@28
+testbench.LED
+testbench.STATE[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

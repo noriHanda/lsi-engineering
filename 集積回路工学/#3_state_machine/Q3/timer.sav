@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Jul 22 07:05:45 2020
+[*]
+[dumpfile] "/Volumes/GoogleDrive/マイドライブ/10_class/電気電子工学演習III/_working/電気電子工学演習III（ディジタル回路）#3_Ans/Q3/timer.vcd"
+[dumpfile_mtime] "Wed Jul 22 06:35:57 2020"
+[dumpfile_size] 11450
+[savefile] "/Volumes/GoogleDrive/マイドライブ/10_class/電気電子工学演習III/_working/電気電子工学演習III（ディジタル回路）#3_Ans/Q3/timer.sav"
+[timestart] 0
+[size] 1677 435
+[pos] -1 -1
+*-15.201899 4000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 193
+[signals_width] 116
+[sst_expanded] 1
+[sst_vpaned_height] 109
+@24
+testbench.CLK
+testbench.RST_N
+testbench.ENTER
+testbench.PAUSE
+@28
+testbench.LED[3:0]
+@25
+testbench.STATE[2:0]
+@24
+testbench.PSTATE
+testbench.COUNT[5:0]
+[pattern_trace] 1
+[pattern_trace] 0

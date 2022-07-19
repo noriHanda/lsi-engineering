@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Thu Jul 29 08:27:30 2021
+[*]
+[dumpfile] "/Users/nishida/Documents/_working/電気電子工学演習III_4/#4_perceptron/7_mem_ctrl_test/mem_ctrl_test.vcd"
+[dumpfile_mtime] "Thu Jul 29 08:26:28 2021"
+[dumpfile_size] 3625
+[savefile] "/Users/nishida/Documents/_working/電気電子工学演習III_4/#4_perceptron/7_mem_ctrl_test/mem_ctrl_test.sav"
+[timestart] 0
+[size] 1817 615
+[pos] -1 -1
+*-2.488772 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 193
+[signals_width] 167
+[sst_expanded] 1
+[sst_vpaned_height] 177
+@28
+testbench.CLK
+@24
+testbench.STATE[1:0]
+testbench.READ_ADDR1[1:0]
+testbench.READ_ADDR2[1:0]
+@25
+testbench.WRITE_ADDR[1:0]
+@22
+testbench.READ_DATA1[11:0]
+testbench.READ_DATA2[11:0]
+testbench.WRITE_DATA[11:0]
+[pattern_trace] 1
+[pattern_trace] 0

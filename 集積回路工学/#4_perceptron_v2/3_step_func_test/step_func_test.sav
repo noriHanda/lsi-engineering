@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Fri Jul 30 03:23:09 2021
+[*]
+[dumpfile] "/Users/nishida/Documents/#4_perceptron/3_step_func_test/step_func_test.vcd"
+[dumpfile_mtime] "Fri Jul 30 03:08:54 2021"
+[dumpfile_size] 1735
+[savefile] "/Users/nishida/Documents/#4_perceptron/3_step_func_test/step_func_test.sav"
+[timestart] 0
+[size] 2268 599
+[pos] -277 -136
+*-2.742897 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 193
+[signals_width] 81
+[sst_expanded] 1
+[sst_vpaned_height] 166
+@28
+testbench.Y
+@421
+testbench.X[5:0]
+[pattern_trace] 1
+[pattern_trace] 0

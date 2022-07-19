@@ -1,0 +1,24 @@
+module testbench;
+    reg A;
+    reg [3:0] B;
+    wire [3:0] P;
+
+    initial
+    begin
+        $dumpfile("mul1_test.vcd");
+        $dumpvars(0, testbench);
+        $monitor("A:%b B:%d P:%d",A, B, P);
+        A <= 0;
+        B <= 0;
+        #32
+            $finish;
+    end
+
+    always #1
+        A <= ~A;
+    always #2
+        B <= B + 1;
+
+    mul1 inst0(A, B, P);
+
+endmodule

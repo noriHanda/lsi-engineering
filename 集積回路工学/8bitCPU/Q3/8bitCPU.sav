@@ -1,0 +1,32 @@
+[timestart] 0
+[treeopen] testbench_cpu8.
+@28
+testbench_cpu8.CK
+@24
+testbench_cpu8.ADDR[7:0]
+@28
+testbench_cpu8.OP[4:0]
+@24
+testbench_cpu8.IM[7:0]
+@24
+testbench_cpu8.in[7:0]
+@28
+testbench_cpu8.SEL[2:0]
+@28
+testbench_cpu8.LD[6:0]
+@28
+testbench_cpu8.cFlag
+@24
+testbench_cpu8.BUS[7:0]
+@24
+testbench_cpu8.Aout[7:0]
+@24
+testbench_cpu8.Bout[7:0]
+@24
+testbench_cpu8.Cout[7:0]
+@24
+testbench_cpu8.Dout[7:0]
+@24
+testbench_cpu8.Oout[7:0]
+@24
+testbench_cpu8.DMout[7:0]

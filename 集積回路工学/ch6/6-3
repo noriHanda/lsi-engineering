@@ -1,0 +1,44 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7f9184104240 .scope module, "tb3" "tb3" 2 1;
+ .timescale 0 0;
+L_0x7f9182e63008 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0x7f91841043c0_0 .net/2u *"_ivl_0", 1 0, L_0x7f9182e63008;  1 drivers
+v0x7f918420fb40_0 .net *"_ivl_2", 0 0, L_0x7f918420fef0;  1 drivers
+L_0x7f9182e63050 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0x7f918420fbf0_0 .net/2u *"_ivl_4", 0 0, L_0x7f9182e63050;  1 drivers
+L_0x7f9182e63098 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7f918420fcb0_0 .net/2u *"_ivl_6", 0 0, L_0x7f9182e63098;  1 drivers
+v0x7f918420fd60_0 .net "out", 0 0, L_0x7f9184210050;  1 drivers
+v0x7f918420fe40_0 .var "q", 1 0;
+L_0x7f918420fef0 .cmp/eq 2, v0x7f918420fe40_0, L_0x7f9182e63008;
+L_0x7f9184210050 .functor MUXZ 1, L_0x7f9182e63098, L_0x7f9182e63050, L_0x7f918420fef0, C4<>;
+    .scope S_0x7f9184104240;
+T_0 ;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v0x7f918420fe40_0, 0;
+    %vpi_call 2 9 "$monitor", "%t %b %b", $time, v0x7f918420fe40_0, v0x7f918420fd60_0 {0 0 0};
+    %delay 15, 0;
+    %vpi_call 2 10 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7f9184104240;
+T_1 ;
+    %delay 1, 0;
+    %load/vec4 v0x7f918420fe40_0;
+    %addi 1, 0, 2;
+    %assign/vec4 v0x7f918420fe40_0, 0;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "6-3.v";

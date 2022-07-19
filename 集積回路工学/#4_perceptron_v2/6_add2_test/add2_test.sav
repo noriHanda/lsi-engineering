@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Jul 16 04:22:53 2020
+[*]
+[dumpfile] "/Volumes/GoogleDrive/マイドライブ/10_class/電気電子工学演習III/perceptron/7_add2_test/add2_test.vcd"
+[dumpfile_mtime] "Thu Jul 16 04:21:34 2020"
+[dumpfile_size] 1779
+[savefile] "/Volumes/GoogleDrive/マイドライブ/10_class/電気電子工学演習III/perceptron/7_add2_test/add2_test.sav"
+[timestart] 0
+[size] 1639 600
+[pos] -1 -1
+*-2.944707 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 193
+[signals_width] 81
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@420
+testbench.A[3:0]
+testbench.B[1:0]
+@421
+testbench.S[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
